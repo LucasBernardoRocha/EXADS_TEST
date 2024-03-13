@@ -42,7 +42,7 @@ class Number
 
     private function calculateIsPrime(): void
     {
-        $this->isPrime = $this->value <= 1 ? false : true;
+        $this->isPrime = !($this->value <= 1);
 
         for ($i = 2; $i <= sqrt($this->value); $i++) {
             if ($this->value % $i === 0) {

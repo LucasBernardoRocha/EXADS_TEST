@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controllers;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use App\Services\PrimeNumberService;
 
@@ -18,9 +17,9 @@ class PrimeController extends AbstractController
     }
 
     #[Route('/primes', name: 'prime_numbers')]
-    public function index(Request $request): Response
+    public function index(): Response
     {
-        $numbers = $this->primeNumberService->analyzeNumberRange(1, 100);
+        $numbers = $this->primeNumberService->analyzeNumberRange();
 
         return $this->render('primes.html.twig', [
             'numbers' => $numbers,
