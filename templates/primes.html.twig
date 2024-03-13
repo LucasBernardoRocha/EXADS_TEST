@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Prime Numbers{% endblock %}
+
+{% block body %}
+    {% for number in numbers %}
+        {{ number.value}}
+        {% if number.isPrime %}
+            [PRIME]
+        {% else %}
+            [{{ number.multiples|join(', ') }}]
+        {% endif %}
+        <br>
+    {% endfor %}
+{% endblock %}
