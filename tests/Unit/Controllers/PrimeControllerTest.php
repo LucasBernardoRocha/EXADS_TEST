@@ -46,10 +46,10 @@ final class PrimeControllerTest extends TestCase
             }, $expectedNumbers));
 
         $this->primeController
-            ->shouldReceive('index')
+            ->shouldReceive('list_prime_numbers')
             ->andReturn(new Response(''));
 
-        $response = $this->primeController->index();
+        $response = $this->primeController->list_prime_numbers();
 
         $this->assertInstanceOf(Response::class, $response);
 

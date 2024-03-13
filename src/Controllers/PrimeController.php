@@ -16,13 +16,15 @@ class PrimeController extends AbstractController
         $this->primeNumberService = $primeNumberService;
     }
 
-    #[Route('/primes', name: 'prime_numbers')]
-    public function index(): Response
+    #[Route('/primes', name: 'app_prime_numbers')]
+    public function list_prime_numbers(): Response
     {
         $numbers = $this->primeNumberService->analyzeNumberRange();
 
-        return $this->render('primes.html.twig', [
+        $template = $this->render('primes/list.html.twig', [
             'numbers' => $numbers,
         ]);
+
+        return new Response($template->getContent());
     }
 }
