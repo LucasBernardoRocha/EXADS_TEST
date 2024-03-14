@@ -32,7 +32,7 @@ final class PrimeControllerTest extends TestCase
     }
 
 
-    public function testIndex(): void
+    public function testListPrimeNumbers(): void
     {
         $expectedNumbers = [
             ['value' => 1, 'isPrime' => false, 'multiples' => [1]],
@@ -46,10 +46,10 @@ final class PrimeControllerTest extends TestCase
             }, $expectedNumbers));
 
         $this->primeController
-            ->shouldReceive('list_prime_numbers')
+            ->shouldReceive('listPrimeNumbers')
             ->andReturn(new Response(''));
 
-        $response = $this->primeController->list_prime_numbers();
+        $response = $this->primeController->listPrimeNumbers();
 
         $this->assertInstanceOf(Response::class, $response);
 

@@ -17,7 +17,7 @@ class PrimeController extends AbstractController
     }
 
     #[Route('/primes', name: 'app_prime_numbers')]
-    public function list_prime_numbers(): Response
+    public function listPrimeNumbers(): Response
     {
         $numbers = $this->primeNumberService->analyzeNumberRange();
 
