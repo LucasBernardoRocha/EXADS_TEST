@@ -1,7 +1,7 @@
 <?php
-namespace App\Tests\Unit\Controllers;
+namespace App\Tests\Unit\Controller;
 
-use App\Controllers\AsciiArrayController;
+use App\Controller\AsciiArrayController;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Response;

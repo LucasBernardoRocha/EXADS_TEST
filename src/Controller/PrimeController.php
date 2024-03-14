@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\Response;
-use App\Services\PrimeNumberService;
+use App\Service\PrimeNumberService;
 
 class PrimeController extends AbstractController
 {

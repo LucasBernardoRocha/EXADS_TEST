@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Tests\Unit\Services;
+namespace App\Tests\Unit\Service;
 
-use App\Services\RandomAsciiService;
+use App\Service\RandomAsciiService;
 use PHPUnit\Framework\TestCase;
 
 class RandomAsciiServiceTest extends TestCase

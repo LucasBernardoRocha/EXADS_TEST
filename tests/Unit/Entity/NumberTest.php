@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Tests\Unit\Entities;
+namespace App\Tests\Unit\Entity;
 
-use App\Entities\Number;
+use App\Entity\Number;
 use PHPUnit\Framework\TestCase;
 
 final class NumberTest extends TestCase

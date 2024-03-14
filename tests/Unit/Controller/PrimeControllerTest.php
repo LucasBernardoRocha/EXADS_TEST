@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Tests\Unit\Controllers;
+namespace App\Tests\Unit\Controller;
 
-use App\Controllers\PrimeController;
-use App\Entities\Number;
-use App\Services\PrimeNumberService;
+use App\Controller\PrimeController;
+use App\Entity\Number;
+use App\Service\PrimeNumberService;
 use Mockery;
 use Mockery\Mock;
 use PHPUnit\Framework\TestCase;

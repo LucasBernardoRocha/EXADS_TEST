@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Tests\Unit\Services;
+namespace App\Tests\Unit\Service;
 
-use App\Entities\Number;
-use App\Services\PrimeNumberService;
+use App\Entity\Number;
+use App\Service\PrimeNumberService;
 use PHPUnit\Framework\TestCase;
 
 class PrimeNumberServiceTest extends TestCase

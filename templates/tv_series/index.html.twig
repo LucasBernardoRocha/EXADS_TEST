@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TV Series{% endblock %}
+
+{% block body %}
+    <div class="example-wrapper">
+        <h1>Upcoming</h1>
+        <ul class="tv-series-list">
+            {% if next_series is empty %}
+                <li>No TV series found.</li>
+            {% else %}
+                <strong>{{ next_series.title }}</strong> ({{ next_series.channel }}) - {{ next_series.gender }}
+            {% endif %}
+        </ul>
+    </div>
+{% endblock %}

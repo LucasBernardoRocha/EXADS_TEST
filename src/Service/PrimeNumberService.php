@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services;
+namespace App\Service;
 
-use App\Entities\Number;
+use App\Entity\Number;
 
 class PrimeNumberService
 {
