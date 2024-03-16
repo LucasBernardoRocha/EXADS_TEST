@@ -30,7 +30,7 @@ class TvSeriesController extends AbstractController
 
         $nextSeries = $this->tvSeriesService->findNext($title, $dayOfWeek, $dateTime);
 
-        return $this->render('tv_series/index.html.twig', [
+        return $this->render('tv_series/design.html.twig', [
             'next_series' => $nextSeries,
         ]);
     }
