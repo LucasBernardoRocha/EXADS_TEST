@@ -1,7 +1,7 @@
-
 ## SQL
-
 ```sql
+CREATE DATABASE `tv_series_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */
+       
 INSERT INTO tv_series (title, channel, gender) VALUES
 ('The Mandalorian', 'Disney+', 'Sci-Fi'),
 ('Stranger Things', 'Netflix', 'Sci-Fi/Horror'),
